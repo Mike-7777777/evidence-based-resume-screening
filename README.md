@@ -32,6 +32,12 @@ git clone https://github.com/Mike-7777777/evidence-based-resume-screening.git ~/
 
 分档有六档：强推、可聊、存疑、信息不足、偏弱、不匹配。分档是排序建议，约不约面由人决定。
 
+产出可以用自带脚本自查（需要 Node 18+，无依赖）：字段齐全、分数在 0-3 或 null、核验计数对得上、分档与规则一致、汇总表列全了每个人。
+
+```bash
+node scripts/check_screening_outputs.js <工作目录>
+```
+
 ## 3 评分怎么来
 
 - 通用内核 [rubric.md](rubric.md)：所有岗位共用的阶段与培养类型、12 个通用维度、分档规则、接 offer 风险、核验原则、注水识别、公平性边界
